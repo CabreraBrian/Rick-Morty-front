@@ -1,0 +1,86 @@
+.nav {
+  height: 6vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+
+.logoHome {
+  left: 1px;
+  height: 90%;
+}
+.logo {
+  left: 1px;
+  height: 90%;
+}
+
+.botonH {
+  border: 2px solid;
+  padding: 5px;
+  /* font-family:'Courier New', Courier, monospace; */
+  font-weight: 900;
+  background-color: rgb(43, 255, 0);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.botonH:hover {
+  box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-webkit-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-moz-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+}
+
+.botonA {
+  border: 2px solid;
+  padding: 5px;
+  /* font-family:'Courier New', Courier, monospace; */
+  font-weight: 900;
+  background-color: rgb(43, 255, 0);
+}
+.botonA:hover {
+  box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-webkit-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-moz-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+}
+
+.botonF {
+  width: max-content;
+  border: 2px solid;
+  padding: 5px;
+  /* font-family:'Courier New', Courier, monospace; */
+  font-weight: 900;
+  background-color: rgb(43, 255, 0);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.botonF:hover {
+  box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-webkit-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+-moz-box-shadow: -3px -2px 172px 16px rgba(0,0,0,0.47) inset;
+}
+
+.botones {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 650px) {
+  .nav {
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: space-around;
+  }
+
+  .logoHome {
+    width: 0px;
+    
+  }
+}

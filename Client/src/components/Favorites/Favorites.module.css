@@ -1,0 +1,46 @@
+.contenedor {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.filtros {
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 870px) {
+    .filtros {
+        justify-content: center;
+        margin-top: 0;
+        position:relative;
+        background-color: rgba(0, 0, 0, 0.856);
+    }    
+}
+
+.etiqueta{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size:small;
+}
+
+.filtroL{
+    border: 2px solid;
+    padding: 5px;
+    font-weight: 900;
+    background-color: rgb(43, 255, 0);
+}
+
+.filtroR{
+    border: 2px solid;
+    padding: 5px;
+    font-weight: 900;
+    background-color: rgb(43, 255, 0);
+}
