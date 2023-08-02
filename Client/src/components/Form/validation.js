@@ -13,7 +13,7 @@ const data = (data) => {
     if(!/\d/.test(data.password)){
         errors.p1 = 'Al menos debe tener un numero'
     }
-    if(data.password.length < 6 || data.password.length > 10){
+    if(data.password.length < 6 || data.password.length > 15){
         errors.p2 = 'Longitud incorrecta'
     }
     return errors

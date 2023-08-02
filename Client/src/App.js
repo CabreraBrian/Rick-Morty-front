@@ -15,7 +15,7 @@ function App() {
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
 
-  async function login(userData) {
+  async function login(userData, setShowError) {
     try {
       const { email, password } = userData;
       const URL = "http://localhost:3001/rickandmorty/login/";
@@ -25,6 +25,7 @@ function App() {
       setAccess(access);
       access && navigate("/home");
     } catch (error) {
+      setShowError("Email o Contraseña incorrectos")
       console.log(error.message);
     }
   }
